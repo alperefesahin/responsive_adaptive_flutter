@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ChatsPage extends StatelessWidget {
-  const ChatsPage({super.key});
+class DesktopChatsPage extends StatelessWidget {
+  const DesktopChatsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chats'),
+        title: const Text('Desktop Chats'),
       ),
       body: const Center(
-        child: Text('Chats Page'),
+        child: Text('Desktop Chats Page'),
       ),
     );
   }
