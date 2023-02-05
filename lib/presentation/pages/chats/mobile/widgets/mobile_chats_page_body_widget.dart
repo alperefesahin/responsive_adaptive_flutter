@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_flutter/presentation/common_widgets/colors.dart';
+import 'package:responsive_flutter/presentation/common_widgets/search_field.dart';
 import 'package:responsive_flutter/presentation/common_widgets/user_list_widget.dart';
 
 class MobileChatsPageBody extends StatelessWidget {
@@ -22,6 +23,8 @@ class MobileChatsPageBody extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ),
+            SizedBox(height: 10),
+            SearchField(),
             SizedBox(height: 10),
             UserListWidget(
               itemCount: 5,
