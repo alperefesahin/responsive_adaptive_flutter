@@ -23,7 +23,10 @@ class MobileChatsPageBody extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            UserListWidget(),
+            UserListWidget(
+              itemCount: 5,
+              isMobile: true,
+            ),
             Text(
               "Colleagues",
               style: TextStyle(
@@ -33,7 +36,10 @@ class MobileChatsPageBody extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            UserListWidget()
+            UserListWidget(
+              itemCount: 5,
+              isMobile: true,
+            )
           ],
         ),
       ),

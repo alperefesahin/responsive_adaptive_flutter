@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_flutter/presentation/core/responsive_widget.dart';
-import 'package:responsive_flutter/presentation/pages/desktop_chats/desktop_chats_page.dart';
-import 'package:responsive_flutter/presentation/pages/mobile_chats/mobile_chats_page.dart';
+import 'package:responsive_flutter/presentation/pages/chats/desktop/desktop_chats_page.dart';
+import 'package:responsive_flutter/presentation/pages/chats/mobile/mobile_chats_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});

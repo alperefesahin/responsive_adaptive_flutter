@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_flutter/presentation/common_widgets/colors.dart';
-import 'package:responsive_flutter/presentation/pages/mobile_chats/widgets/bottom_navigation_bar_widget.dart';
-import 'package:responsive_flutter/presentation/pages/mobile_chats/widgets/mobile_chats_page_body_widget.dart';
+import 'package:responsive_flutter/presentation/pages/chats/mobile/widgets/bottom_navigation_bar_widget.dart';
+import 'package:responsive_flutter/presentation/pages/chats/mobile/widgets/mobile_chats_page_body_widget.dart';
 
 class MobileChatsPage extends StatelessWidget {
   const MobileChatsPage({super.key});
@@ -13,6 +13,7 @@ class MobileChatsPage extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 70,
         backgroundColor: Colors.transparent,
+        centerTitle: true,
         elevation: 0,
         title: const Text(
           'Chats',

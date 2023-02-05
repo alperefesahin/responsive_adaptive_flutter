@@ -2,13 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:responsive_flutter/presentation/common_widgets/colors.dart';
 
 class UserListWidget extends StatelessWidget {
-  const UserListWidget({super.key});
+  const UserListWidget({
+    super.key,
+    required this.itemCount,
+    required this.isMobile,
+  });
+
+  final int itemCount;
+  final bool isMobile;
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       padding: const EdgeInsets.only(bottom: 40),
-      itemCount: 5,
+      itemCount: itemCount,
       shrinkWrap: true,
       itemBuilder: (context, index) {
         return Padding(
@@ -18,10 +25,10 @@ class UserListWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  const CircleAvatar(
+                  CircleAvatar(
                     backgroundColor: blackColor,
-                    radius: 35,
-                    child: Icon(Icons.person, size: 30),
+                    radius: isMobile ? 35 : 30,
+                    child: const Icon(Icons.person, size: 30),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 12, bottom: 15),
@@ -30,17 +37,17 @@ class UserListWidget extends StatelessWidget {
                       children: [
                         Text(
                           "Lightner ${index + 1}",
-                          style: const TextStyle(
-                            fontSize: 20,
+                          style: TextStyle(
+                            fontSize: isMobile ? 20 : 18,
                             color: blackColor,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
                         const SizedBox(height: 5),
-                        const Text(
+                        Text(
                           "Lorem Ipsum is simply...",
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: isMobile ? 15 : 13,
                             color: greyColor,
                             fontWeight: FontWeight.w500,
                           ),
@@ -50,14 +57,14 @@ class UserListWidget extends StatelessWidget {
                   ),
                 ],
               ),
-              if (index == 0 || index == 2)
+              if (index == 0 || index == 2 || index == 7)
                 Padding(
                   padding: const EdgeInsets.only(right: 25, bottom: 20),
                   child: CircleAvatar(
-                    backgroundColor: yellowColor,
+                    backgroundColor: isMobile ? yellowColor : lightBlueColor,
                     radius: 12,
                     child: Text(
-                      index == 0 ? "1" : "3",
+                      index == 0 || index == 7 ? "1" : "3",
                       style: const TextStyle(
                           color: blackColor, fontWeight: FontWeight.bold, fontSize: 15),
                     ),
