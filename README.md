@@ -2,9 +2,9 @@
 
 In this project, I will explained how to create a user interface that is both adaptive and responsive. Discover the power of Flutter and take your app development skills to new heights.
 
-To watch the related video on YouTube: 
+To watch the related video on YouTube: https://youtu.be/LI2m4-87ZGM
 
-To read the related article on Medium:
+To read the related article on Medium: https://medium.com/codex/responsive-adaptive-design-in-flutter-within-5-minutes-c93f01aae96a
 
 The design inspired by: https://dribbble.com/shots/15449720-Online-clinic-concept
 
